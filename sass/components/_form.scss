@@ -1,0 +1,96 @@
+form {
+  .form-group {
+    margin-bottom: 1rem;
+  }
+
+  .form-control {
+    border-radius: 0;
+    // margin-top: 4px;
+    border-color: #ddd;
+  }
+
+  & > .relative {
+    hr {
+      margin: 2rem 0 3rem 0;
+      box-shadow: 0 6px 14px 1px rgba(0, 0, 0, 0.5);
+      border-top: 1px dashed #393939;
+    }
+  }
+}
+
+.relative {
+  .form-label {
+    margin-bottom: 0.5rem;
+    position: absolute;
+    top: -10px;
+    z-index: 1;
+    padding: 0 8px;
+    background: #fff;
+    right: 6px;
+    color: #666;
+    font-size: 12px;
+  }
+}
+
+.MuiFormControl-root.MuiTextField-root {
+  top: 0;
+}
+
+.Mui-error .MuiOutlinedInput-notchedOutline {
+  border-color: #ddd !important;
+  border-bottom-color: #ddd;
+}
+
+.error {
+  border-color: #fd5858 !important;
+  font-size: 11px;
+  position: relative;
+  top: 2px;
+  color: #fd5858;
+
+  & + div.error {
+    right: 7px !important;
+    position: relative;
+  }
+
+  & + .errorText {
+    color: red;
+    font-size: 11px;
+  }
+}
+
+input.error:focus {
+  box-shadow: 0 0 0 0.25rem rgb(255 192 192 / 20%);
+}
+input[error] {
+  box-shadow: 0 24px 0px rgba(255, 192, 192, 0.2);
+  border-bottom: 1px solid #ff5d5d !important;
+  color: #000;
+}
+.rselect {
+  &.error {
+    box-shadow: 0 24px 0px rgb(255 192 192 / 20%);
+    border-bottom: 1px solid #ff5d5d !important;
+    color: #000;
+    & + div {
+      color: red;
+      font-size: 11px;
+    }
+  }
+
+  & > div {
+    border-radius: 0 !important;
+  }
+
+  & + div {
+    position: relative;
+    top: 4px;
+    right: 6px;
+  }
+  .react-select__control {
+    min-height: 36px;
+  }
+  .react-select__dropdown-indicator {
+    padding: 7px;
+  }
+}

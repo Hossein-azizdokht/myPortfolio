@@ -1,0 +1,57 @@
+section.services {
+  padding: 3rem 0 0 0;
+  margin: 0 0 0 0;
+  position: relative;
+  height: 450px;
+  // background: #3a4970 url("../../assets/images/our-services-bcg.jpg") left top
+  //   no-repeat;
+  background-size: cover;
+  background-position:top center;
+  padding: 4rem 0 2rem 0;
+  backdrop-filter: blur(10px);
+  background-color: rgba(16, 23, 56, 0.466);
+  @media only screen and (max-width:992px) {
+    height: auto;
+  }
+  .card {
+    &-desc {
+      display: none;
+    }
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    // height: 400px;
+    // background: #3a4970 url("../../assets/images/our-services-bcg.jpg") left top
+    //   no-repeat;
+    // background-size: cover;
+    // background-position-y: -4px;
+    // z-index: -1;
+    // padding: 4rem 0 2rem 0;
+    @media only screen and (max-width:768px) {
+      background-size: 100%;
+    }
+  }
+  .service-item {
+    padding: 0 3px;
+    .card {
+      background-color: rgba(0,0,0,0.3);
+      height: 190px;
+      border-radius: $base-radius;
+      transition: all 0.2s ease-in;
+      box-shadow: 0 0 0 0 transparent inset;
+      &-title{
+        color:#fff;
+        font-weight: 300;
+      }
+    }
+    &:hover{
+      .card{
+        box-shadow: 0 1px 0 0 #dcf7fff1 inset;
+      }
+    }
+  }
+}

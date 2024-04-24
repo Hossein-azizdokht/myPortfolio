@@ -1,0 +1,27 @@
+section.customers {
+  // background-color: #f9f9f9;
+  padding-top: 3rem;
+  margin: 0;
+  position: relative;
+  .swiper-slide{
+    min-height: 101px;
+  }
+  .swiper{border-radius: $base-radius;direction: ltr;}
+  .swiper-slide {
+    text-align: center;
+    // border: 1px solid #ddd;
+    img {
+      opacity: 0.5;
+      filter: grayscale(1);
+      -webkit-filter: grayscale(1);
+      @include transition(all 0.2s);
+      margin: auto;
+      width: 115px;
+      &:hover {
+        filter: grayscale(0);
+        -webkit-filter: grayscale(0);
+        opacity: 1;
+      }
+    }
+  }
+}

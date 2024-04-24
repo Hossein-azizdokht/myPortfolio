@@ -1,0 +1,279 @@
+section.ourScale {
+  padding: 6rem 0 6rem 0;
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  .middleElm {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    right: 50%;
+    transform: translateX(200px);
+    top: 0;
+    z-index: 0;
+    @media only screen and (max-width: 992px) {
+      width: 300px;
+      height: 300px;
+      right: 50%;
+      top: 50%;
+      transform: translate(50%, -50%);
+    }
+    .mainLogoMotion {
+      max-width: 400px;
+      width: 100%;
+      animation: goFade 5s ease-in infinite;
+    }
+  }
+  .card {
+    background-color: transparent;
+    z-index: 10;
+    &[class*="-obj"] {
+      position: relative;
+      margin-bottom: 3rem;
+      padding: 0 0 1rem 0;
+      box-shadow: none;
+      // border-bottom: 1px solid #ddd;
+      border: none;
+      border-radius: 0;
+    }
+    &-title {
+      font-size: 1.5rem;
+      margin: 0;
+    }
+    .card-title{
+      direction: rtl;
+    }
+    .card-icon {
+      margin-left: 0;
+      height: 70px;
+      img {
+        width: auto;
+        height: 55px;
+        margin: auto;
+      }
+    }
+    &:hover {
+      box-shadow: none;
+      transform: none;
+    }
+    &.rt-obj,
+    &.rb-obj {
+      display: block;
+      text-align: center;
+      & > a,
+      .card-desc {
+        display: block;
+        text-align: center;
+        font-size: 1rem;
+      }
+    }
+  }
+  .rightPart {
+    position: relative;
+    &.has-dots {
+      &::before {
+        content: "";
+        background: url("/images/dots.svg");
+        width: 107px;
+        height: 100px;
+        position: absolute;
+        z-index: -1;
+        top: -25px;
+        right: -28px;
+        opacity: 0.6;
+        @media screen and (max-width: 768px) {
+          display: none;
+        }
+      }
+    }
+  }
+  .leftPart {
+    position: relative;
+    &.has-dots {
+      &::before {
+        content: "";
+        background: url("/images/dots.svg");
+        width: 107px;
+        height: 100px;
+        position: absolute;
+        z-index: -1;
+        bottom: -25px;
+        left: -28px;
+        opacity: 0.6;
+        @media screen and (max-width: 768px) {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.networkLogo_svg {
+  .backLogo {
+    position: relative;
+    animation: vertical 20s ease 0s infinite normal forwards;
+  }
+  .linesOverLogo {
+    position: relative;
+    animation: vertical 10s ease 1.5s infinite normal forwards;
+    &:hover {
+      path {
+        stroke: rgb(56, 132, 194) !important;
+        stroke-width: 2px;
+        filter: drop-shadow(0px 18px 18px rgb(84, 192, 255)) !important;
+      }
+    }
+
+    path {
+      transition: all 0.3s ease-in !important;
+      pointer-events: all;
+      animation-name: strokeLight;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      &:nth-child(1) {
+        animation-delay: 0.1s;
+      }
+      &:nth-child(2) {
+        animation-delay: 0.2s;
+      }
+      &:nth-child(3) {
+        animation-delay: 0.3s;
+      }
+      &:nth-child(4) {
+        animation-delay: 0.4s;
+      }
+      &:nth-child(5) {
+        animation-delay: 0.5s;
+      }
+      &:nth-child(6) {
+        animation-delay: 0.6s;
+      }
+      &:nth-child(7) {
+        animation-delay: 0.7s;
+      }
+      &:nth-child(8) {
+        animation-delay: 0.8s;
+      }
+      &:nth-child(9) {
+        animation-delay: 0.9s;
+      }
+      &:nth-child(10) {
+        animation-delay: 1s;
+      }
+      &:nth-child(11) {
+        animation-delay: 01.1s;
+      }
+      &:nth-child(12) {
+        animation-delay: 1.2s;
+      }
+    }
+  }
+
+  .obj {
+    position: relative;
+    animation-name: horiz;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    &:nth-child(2n + 1) {
+      animation-name: vertical;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-delay: 1.3s;
+    }
+  }
+  .blur {
+    -webkit-filter: blur(2px) brightness(100%);
+    -moz-filter: blur(2px) brightness(100%);
+    filter: blur(2px) brightness(100%);
+    opacity: 0.7;
+  }
+  .triangleObj {
+    transition: transform 0.1s ease-in;
+  }
+  transition: all 0.2s ease-in;
+  &:hover {
+    .triangleObj {
+      filter: hue-rotate(-174deg);
+      -moz-filter: hue-rotate(-174deg);
+      -webkit-filter: hue-rotate(-174deg);
+    }
+  }
+}
+
+@keyframes strokeLight {
+  0%,
+  100% {
+    stroke-width: 0;
+  }
+
+  10%,
+  30% {
+    stroke-width: 1px;
+    stroke: #81838a;
+    filter: drop-shadow(0px 8px 8px rgba(255, 183, 89, 0));
+  }
+  40% {
+    stroke-width: 0;
+  }
+
+  60% {
+    stroke-width: 2px;
+    stroke: #ffa844;
+    filter: drop-shadow(0px 18px 18px rgb(255, 169, 111));
+  }
+}
+
+@keyframes vertical {
+  0%,
+  100% {
+    top: 3px;
+  }
+
+  10%,
+  30%,
+  50%,
+  70% {
+    top: 0px;
+  }
+
+  20%,
+  40%,
+  60% {
+    top: 10px;
+  }
+
+  80% {
+    top: 8px;
+  }
+
+  90% {
+    top: 0px;
+  }
+}
+
+@keyframes horiz {
+  0%,
+  100% {
+    right: 3px;
+  }
+
+  10%,
+  30%,
+  50%,
+  70% {
+    right: 0px;
+  }
+
+  20%,
+  40%,
+  60% {
+    right: 10px;
+  }
+
+  80% {
+    right: 8px;
+  }
+
+  90% {
+    right: 0px;
+  }
+}

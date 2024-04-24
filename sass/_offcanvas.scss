@@ -1,0 +1,98 @@
+.offcanvas {
+  width: 350px !important;
+  @media (max-width: 992px) {
+    .navbar-nav {
+      align-items: flex-start !important;
+      margin-bottom: 35px;
+    }
+    .offcanvas-body {
+      .dropdown-menu {
+        text-align: right;
+        font-size: 13px;
+        border: none;
+      }
+    }
+  }
+
+  .navbar {
+    .container {
+      position: relative;
+    }
+    .left {
+      border-left: none;
+      @media (max-width: 992px) {
+        margin-left: 50px;
+      }
+    }
+    .navbar-toggler {
+      position: absolute;
+      left: 10px;
+    }
+  }
+  .navbar-nav {
+    @media (max-width: 992px) {
+      & > div {
+        display: flex;
+        width: 100%;
+        padding: 0.7rem 0;
+        font-size: 0.9rem;
+        border-bottom: 1px dashed #ddd;
+        & > svg {
+          position: relative;
+          font-size: 1.5rem;
+          min-width: 24px;
+        }
+        a {
+          flex-grow: 1;
+          padding: 0;
+        }
+        &:hover {
+          .icon {
+            color: $base-color;
+          }
+        }
+        .icon {
+          margin-left: 8px;
+
+          &:hover {
+            color: $base-color;
+          }
+        }
+      }
+      .nav-item {
+        flex-grow: 1;
+        & > a {
+          display: flex;
+          flex-grow: 1;
+          align-items: center;
+          justify-content: space-between;
+        }
+      }
+      .dropdown-menu {
+        & > a {
+          font-size: 0.9rem;
+          padding: 0.5rem 0;
+        }
+      }
+    }
+    @media (min-width: 992px) {
+      .icon {
+        display: none;
+      }
+    }
+  }
+  &.show {
+    .languageBtn {
+      margin: 0px 20px 0 0;
+      span {
+        margin: 0 8px;
+        font-size: 1rem;
+        position: relative;
+        top: 4px;
+      }
+      img {
+        width: 24px;
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.connectedList {
+  li {
+    &::before {
+      content: "";
+      width: 22px;
+      height: 22px;
+      border-radius: 12px;
+      border: 1px solid #ccc;
+      background-color: #fff;
+      position: absolute;
+      top: 50%;
+      left: -12px;
+      transform: translateY(-50%);
+    }
+  }
+  .square:first-child {
+    li {
+      &:first-child {
+        &::before {
+          background-color: rgb(240, 147, 71);
+          border-color: orange;
+          box-shadow: 0 0 0 5px #fff inset,0 0 0 10px rgba(240, 147, 71,0.1),0 0 0 5px rgba(240, 147, 71,0.1);
+        }
+      }
+    }
+  }
+}
+html[lang="fa"] {
+  .connectedList {
+    li {
+      &::before {
+        left: unset;
+        right: -12px;
+      }
+    }
+  }
+}

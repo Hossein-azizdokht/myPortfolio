@@ -1,0 +1,41 @@
+section.supporting {
+  padding: 4rem 0 0 0;
+  margin: 4rem 0 3rem 0;
+  position: relative;
+  height: 400px;
+  background: #3a4970 url("/images/our-services-bcg.jpg") left top
+    no-repeat;
+  background-size: cover;
+  background-position:top center;
+  padding: 4rem 0 2rem 0;
+  @media only screen and (max-width:992px) {
+    height: auto;
+  }
+  .card {
+    &-desc {
+      display: none;
+    }
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    @media only screen and (max-width:768px) {
+      background-size: 100%;
+    }
+  }
+  .service-item {
+    padding: 0 3px;
+    .card {
+      background-color: rgba(0,0,0,0.3);
+      height: 190px;
+      border-radius: 1rem;
+      &-title{
+        color:#fff;
+        font-weight: 300;
+      }
+    }
+  }
+}

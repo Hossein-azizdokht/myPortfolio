@@ -1,0 +1,189 @@
+{
+  "header": {
+    "navigation": {
+      "aboutUs": {
+        "AboutPars": "About pars",
+        "BoardOfDirectors": "Board of directors",
+        "CEO": "CEO",
+        "Certificates": "Certificates",
+        "menuTitle": "About us"
+      },
+      "contact": { "menuTitle": "Contact us" },
+      "articles": { "menuTitle": "Articles" },
+      "career": {
+        "menuTitle": "Careers"
+      },
+      "home": "Home",
+      "phoneNumber": "+989375872490",
+      "services": {
+        "callCenter24": "Call center (24/7)",
+        "IssuanceOfVariousTypesOfBankCards": "Issuance of various types of bank cards",
+        "menuTitle": "Services",
+        "NetworkSecurityAndMonitoring": "Network, security and monitoring",
+        "SoftwareProductionAndDevelopment": "Software production and development",
+        "SpecializedRepairsAndSupply": "Specialized repairs and supply",
+        "SpecializedSupportCenter": "Specialized support center"
+      }
+    }
+  },
+  "home": {
+    "hero": {
+      "myName": "Hi, I'm Hossein Azizdokht",
+      "myWork1": "Front-End Web Developer &",
+      "myWork2": "Graphic Designer",
+      "workItem1": "Web Development",
+      "workItem2": "Ui-Ux Design",
+      "workItem3": "Graphic Design",
+      "experience1": "Years of",
+      "experience2": "Experience",
+      "customers1": "Happy",
+      "customers2": "Customers"
+    },
+    "skills": {
+      "sectionTitle": "My Skills",
+      "sectionSubTitle": "PROGRAMMING SKILLS",
+      "description": "I have more than 5 years of experience in designing and more than 5 years of experience in developing websites and modern applications",
+      "secondTitle": "OTHER kNOWLEDGE",
+      "secondSubTitle": "I also know and have worked with.."
+    },
+    "portfolio": {
+      "sectionTitle": "PORTFOLIO",
+      "sectionSubTitle": "SOME SELECTED WORKS"
+    },
+    "timeline": {
+      "sectionTitle": "TIMELINE",
+      "sectionSubTitle": "WORKING PERIOD"
+    },
+    "jobHistory": {
+      "sectionTitle": "سوابق شغلی",
+      "sectionSubTitle": "دوره ها و شرکت هایی که مشغول به کار بوده‌ام"
+    },
+    "testimonial": {
+      "sectionTitle": "TESTIMONIAL",
+      "sectionSubTitle": "OUR CUSTOMERS SAY.."
+    },
+    "ourCustomers": {
+      "sectionTitle": "CUSTOMERS",
+      "sectionSubTitle": "SOME OF MY COLLABORATIONS"
+    },
+    "ourScale": {
+      "CityOffices": "City offices",
+      "CoveredUnits": "Covered units",
+      "EnterpriseCustomers": "Enterprise customers",
+      "ProvincialOffices": "Provincial offices",
+      "QueueManagement": "Queue management",
+      "SBU": "SBU"
+    },
+    "products": {
+      "Card issuing laser printer": {
+        "description": "The first laser card printer in the Middle East Knowledge based product Has a patent certificate",
+        "title": "Card issuing laser printer"
+      },
+      "Pars Guard firewall": {
+        "description": "Ensuring the security and service quality of a localized product with integrated management capabilities",
+        "title": "Pars Guard firewall"
+      },
+      "Queue management system": {
+        "description": "Providing intelligent services of turn-taking and having Online and flexible management reports Using the new generation survey system",
+        "title": "Queue management system"
+      },
+      "SBU": {
+        "description": "Smart solar electric generator Knowledge based product Has a patent certificate",
+        "title": "SBU"
+      },
+      "sectionTitle": "Pars's Products"
+    },
+    "services": {
+      "call center 24/7": "Call center 24/7",
+      "Issuance of bank cards": "Issuance of bank cards",
+      "Network, security and monitoring": "Network, security and monitoring",
+      "Repairs and supply": "Repairs and supply",
+      "sectionTitle": "Pars's Serives",
+      "Software development": "Software development",
+      "Specialized support center": "Specialized support center"
+    }
+  },
+  "about": {
+    "BoardOfDirectors": {
+      "name-1": "Ahmad Reza Nasr Esfahani",
+      "name-2": "Dr. Abul-Qasem Sadeghi",
+      "name-3": "Mohsen Dashti",
+      "pageTitle": "Board of Directors",
+      "post-1": "Chairman of the Board",
+      "post-2": "CEO and Vice Chairman of the Board of Directors",
+      "post-3": "Member of the Board"
+    },
+    "CEO": {
+      "content": " Today, the banking industry has been significantly affected by the developments in the information technology industry and the emerging phenomena of virtual space, and we are witnessing an increasing intertwining between these two industries. The emergence of new actors and infrastructures of financial and banking services, such as open banking, fintechs, landtechs, and the like, has fundamentally changed the trend of the banking industry. On the other hand, the new international monetary trends in the field of cryptocurrencies are gradually leaving tremendous effects on the concept of money and value exchange at the global level. In such a complex and changing world, Pars Technology Sadad Company is determined to lead the process of these developments in the country's banking system by relying on the two principles of knowledge-based innovation and continuous improvement of the quality and variety of services, and in addition to the Bank Melli Iran as the largest bank in the Islamic world. , the entire banking system of the country will also benefit from its achievements.",
+      "footnote-description": "CEO and Vice Chairman of the Board of Directors",
+      "footnote-name": "Dr. Abul-Qasem Sadeghi",
+      "pageTitle": "CEO",
+      "subTitle": " Message of CEO"
+    },
+    "certificates": {
+      "description-1": "Competency certificate for informatics services",
+      "description-2": "Competency certificate for informatics services",
+      "description-3": "Activity licenses of Pars Sadad Technology",
+      "description-4": "Invention registration certificate",
+      "description-5": "Sales representative of EPSON products",
+      "description-6": "Sales representative of BENQ products",
+      "description-7": "Sales representative of SAMSUNG products",
+      "description-8": "Sales representative of GIGABYTE products",
+      "description-9": "Sales representative of LINKSYS products",
+      "pageTitle": "Certificates and honors of Pars"
+    },
+    "history": {
+      "pageTitle": " About us",
+      "hilightText": " Pars Technology Sadad",
+      "content-1": "Company started working in 2013 with the aim of providing services in the field of information and communication technology to the National Bank of Iran. These services include hardware and software support, equipment and systems maintenance, network and security, On-Grid and Off-Grid renewable energies, electricity and UPS, issuing cards and passwords in a specialized and integrated manner, as well as creating a coherent network of customer services in order to Support for all electronic systems and responding to the problems and requests of real and legal customers of National Bank is provided at the country level. ",
+      "content-2": " Since 2017, due to the move of the National Bank of Iran, towards electronic banking and in line with modern technologies, this company, while changing its organizational structure, has set up research and development units, business and design and development of customized software and entered into New technologies have put this field on their agenda. This company, having specialized, young and motivated forces, has designed, produced and put into operation products such as solar energy system, integrated and intelligent queue system, contact center organization and other products in the field of information technology, using the knowledge of the world.",
+      "content-3": "  Obtaining more than 12 ranks of a Supreme Council of Informatics, being the official representative of Kaspersky Antivirus and other computer products and parts is one of the important measures to improve the position of this company in the field of informatics. Currently, Sadad Pars Technology Company, having 6 centers in Tehran, 30 centers in the provinces and more than 115 centers in the cities, is providing services as one of the largest IT companies in the field of banking."
+    }
+  },
+  "contact": {
+    "cardTitle": "",
+    "CustomerServices": "Customer Services",
+    "CustomerServices_label": "Providing 24/7 services to Bank Melli Iran customers",
+    "EconomicCode": "Economic code : 411449471179",
+    "NationalID": "National ID : 14004105517",
+    "pageTitle": "Contact us",
+    "RegistrationNumber": "Registration number: 455185",
+    "phoneNumbers": "+982183376  -  +982183386"
+  },
+  "footer": {
+    "slogan": "Design is thinking made visual.",
+    "aboutPars": {
+      "description": "This company started working in 2013 with the aim of providing services in the field of information and communication technology to the Bank Melli Iran. Hardware and software support, repair and maintenance of equipment and systems, network and security, and issuance of bank cards are part of our services nationwide.",
+      "title": "Pars Technology Sadad Co"
+    },
+    "contactInfo": {
+      "Address": "No. 6, Mehzad Alley, Iranshahr St., Ferdowsi Square, Tehran, Iran",
+      "Email": "info@parstechnology.ir",
+      "Fax": "fax : 86073920",
+      "Phone": "+989375872490",
+      "PostalCode": "Postal code : 1581643313",
+      "title": "Contact us"
+    },
+    "copyRight": "All rights reserved for Pars Technology Sadad 2013-2024",
+    "Email": "Email",
+    "links": {
+      "BMI": "Bank Melli Iran",
+      "Pishgaman": "Pishgaman Co",
+      "PSP": "Sadad PSP",
+      "SADAD": "Sadad Co",
+      "title": "Links"
+    }
+  },
+
+  "offcanvas": {
+    "title": "Menu"
+  },
+  "404": {
+    "text": "Page not found!",
+    "buttonLabel": "Go to home"
+  },
+  "500": {
+    "text": "Something went wrong!",
+    "buttonLabel": "Go to home"
+  }
+}

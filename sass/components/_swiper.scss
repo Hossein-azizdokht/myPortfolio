@@ -1,0 +1,31 @@
+.swiper-button-next,
+.swiper-button-prev {
+  width: auto;
+  height: auto;
+  margin-top: 0 !important;
+  &:after {
+    font-size: 18px;
+    background: #00000000;
+    padding: 0;
+    border: 1px solid #0000007a;
+    color: #000000;
+    width: 30px;
+    height: 30px;
+    top: 0 !important;
+    font-size: 15px !important;
+    text-align: center;
+    line-height: 30px !important;
+  }
+}
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+  right: 35px !important;
+  left: auto !important;
+  top: 6px !important;
+}
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+  right: 0 !important;
+  left: auto !important;
+  top: 6px !important;
+}

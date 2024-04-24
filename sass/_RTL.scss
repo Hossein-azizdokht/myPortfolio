@@ -1,0 +1,49 @@
+html[lang="fa"] {
+  .hero {
+    &-workItem {
+      svg {
+        left: unset;
+        right: 10px;
+        transform: rotate(180deg);
+      }
+    }
+    .short_info {
+      ul {
+        li {
+          margin-right: 0;
+          margin-left: 50px;
+          span {
+            padding-left: 0;
+            padding-right: 15px;
+          }
+        }
+      }
+    }
+
+    .square {
+      .image {
+        transform: rotateY(180deg);
+      }
+    }
+  }
+  a.languageBtn {
+    span {
+      font-family: "Poppins" !important;
+    }
+  }
+  section .section-title {
+    & + [class*="tracking-"] {
+      letter-spacing: 0;
+    }
+    &:before {
+      left: auto;
+      right: 30px;
+    }
+    &.has-dots {
+      &::after {
+        right: -58px;
+        left: auto;
+      }
+    }
+  }
+}

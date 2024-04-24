@@ -1,0 +1,154 @@
+.ball {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border-radius: 50%;
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+  background: url("/images/worldt.png") repeat-x;
+  // background-size: auto 100%;
+  -webkit-animation: move-map 30s infinite linear;
+  -moz-animation: move-map 30s infinite linear;
+  -o-animation: move-map 30s infinite linear;
+  -ms-animation: move-map 30s infinite linear;
+  animation: move-map 30s infinite linear;
+}
+
+.ball:before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  box-shadow: 0 0 40px 30px rgb(255 255 255) inset;
+  z-index: 2;
+}
+.ball:after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -webkit-filter: blur(0);
+  opacity: 0.6;
+  background: #fff;
+}
+
+.ball .shadow1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.1) 40%,
+    rgba(0, 0, 0, 0) 50%
+  );
+  transform: rotateX(90deg) translateZ(-150px) translateX(-50%)
+    translateY(170px);
+  z-index: -1;
+  left: 50%;
+  opacity: 0.5;
+}
+.stage {
+  width: 310px;
+  height: 310px;
+  display: inline-block;
+  margin: 20px;
+  -ms-perspective: 1200px;
+  -o-perspective: 1200px;
+  perspective: 1200px;
+  -ms-perspective-origin: 50% 50%;
+  -o-perspective-origin: 50% 50%;
+  perspective-origin: 50% 50%;
+  position: absolute;
+  right: 50%;
+  top: 0;
+  filter: grayscale(1);
+  transform: translateX(56%) SCALE(1.1);
+  opacity: 0.7;
+  &.simpleMode{
+      width: 100vw;
+      margin: 0;
+      height: 420px;
+      .ball{
+          opacity: 0.3;
+          &:after{
+              display: none;
+          }
+          &::before{
+            box-shadow: 0 0 40px 30px #f5f5f5 inset;
+          }
+      }
+      .shadow1{display: none;}
+  }
+}
+
+@-moz-keyframes move-map {
+  0% {
+    background-position: -1196px 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+@-webkit-keyframes move-map {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -1196px 0;
+  }
+}
+
+@-o-keyframes move-map {
+  0% {
+    background-position: -1196px 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+@-ms-keyframes move-map {
+  0% {
+    background-position: -1196px 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+@keyframes move-map {
+  0% {
+    background-position: -1196px 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+@keyframes goFade {
+  0% {
+    opacity: 0.2;
+  }
+  20% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}

@@ -1,0 +1,219 @@
+.newsList {
+  margin: 0;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    height: 230px;
+    background: rgb(72, 88, 177) url("/images/news_section_bg.png") right top
+      no-repeat;
+    background-size: cover;
+    background-position-y: -4px;
+    padding: 4rem 0 2rem 0;
+  }
+  .container {
+    padding: 4rem 6rem 2rem 6rem;
+    position: relative;
+
+    @media only screen and (max-width: 768px) {
+      padding: 4rem 1rem 2rem 1rem;
+    }
+  }
+  .card {
+    text-align: right;
+    padding: 1rem 2rem;
+
+    &:hover {
+      transform: none;
+      box-shadow: none;
+    }
+    &.bordered {
+      border: 1px solid #e5e5e5 !important;
+      box-shadow: 0 -18px 18px -15px rgba(0, 0, 0, 0.2);
+    }
+    @media only screen and (max-width: 992px) {
+      .blog-item {
+        display: flex;
+        flex-direction: column;
+        ._cover {
+          width: 100% !important;
+          margin-bottom: 1rem;
+          img {
+            width: 100% !important;
+          }
+        }
+      }
+      .eachItem {
+        margin-bottom: 10px !important;
+        .blog-item-title {
+          margin: 0;
+          height: auto;
+        }
+      }
+      ._cover {
+        float: right;
+        width: 110px;
+        margin-left: 8px;
+        position: relative;
+        top: 9px;
+        img {
+          border-radius: 6px;
+        }
+      }
+    }
+  }
+  .listView {
+    .blog-item {
+      &:hover {
+        box-shadow: 0 0 0 1px #ddd, 0 0 68px -4px rgba(0, 0, 0, 0.4);
+        position: relative;
+        transform: scale(1.05);
+        z-index: 100;
+        background: #fff;
+        padding: 2rem;
+      }
+    }
+  }
+}
+
+.newsGallery {
+  // height: 490px;
+  margin-bottom: 1rem;
+  .swiper:first-child {
+    height: calc(100% - 100px);
+  }
+  .swiper:last-child {
+    height: calc(100% - 390px);
+    margin-top: 8px;
+  }
+  .swiper {
+    .swiper-slide {
+      border-radius: $base-radius;
+      overflow: hidden;
+      img {
+        width: 100%;
+        border-radius: $base-radius;
+      }
+    }
+    &.swiper-thumbs {
+      .swiper-slide {
+        border-radius: calc($base-radius/2);
+      }
+      img {
+        width: 100%;
+        border-radius: calc($base-radius / 2);
+      }
+    }
+  }
+}
+.thumbnailItem {
+  width: 90px !important;
+  height: 70px !important;
+  img {
+    width: auto !important;
+    height: 70px;
+  }
+}
+.listView-options {
+  display: flex;
+  @media only screen and (max-width: 992px) {
+    display: none !important;
+  }
+}
+.listView-options {
+  display: flex;
+  button {
+    background: #00000011;
+    padding: 7px;
+    margin: 0 3px 0px 0px;
+    position: relative;
+    top: -6px;
+    color: #fff !important;
+    border-radius: 4px;
+    border: none;
+    &.active {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+  }
+}
+
+.listView {
+  .link {
+    .blog-item {
+      display: flex;
+      @media only screen and (max-width: 992px) {
+        flex-direction: column;
+        ._cover {
+          width: 100% !important;
+          margin-bottom: 1rem;
+          img {
+            width: 100% !important;
+          }
+        }
+      }
+      ._cover {
+        border-radius: 6px;
+        min-height: auto;
+        overflow: unset;
+        width: 200px;
+        img {
+          border-radius: 6px;
+          position: unset;
+          transform: none;
+          width: 200px;
+        }
+      }
+      .blog-item-title {
+        height: auto;
+        min-height: auto;
+        margin-top: 0;
+      }
+      .blog-item-status {
+        display: flex;
+        align-items: center;
+        & > * {
+          margin: 0 2px;
+        }
+        svg {
+          position: relative;
+          top: -3px;
+        }
+      }
+    }
+  }
+  &:last-child {
+    margin-bottom: 24px;
+  }
+}
+
+.imgPopup {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: #000000b5;
+  z-index: 1000;
+  display: none;
+  overflow: auto;
+  &.show {
+    display: flex;
+  }
+  & > img {
+    animation: fadePop 0.1s ease-in;
+    max-height: 98%;
+    margin: auto;
+  }
+}
+
+@keyframes fadePop {
+  0% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

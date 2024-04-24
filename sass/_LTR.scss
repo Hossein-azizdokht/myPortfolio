@@ -1,0 +1,144 @@
+html[lang="en"] {
+  direction: ltr;
+  body {
+    text-align: left !important;
+    font-family: "Poppins" !important;
+    font-size: 14px;
+    direction: ltr;
+  }
+  p,
+  span {
+    font-family: "Poppins" !important;
+  }
+  a.languageBtn{
+    span{
+      
+      font-family: "IRANYekan" !important;
+    }
+  }
+  .directionHandler {
+    direction: rtl;
+  }
+  .pageLoader {
+    right: unset;
+    left: -5px;
+  }
+  .navbar-brand {
+    margin-left: 0;
+    margin-right: auto;
+  }
+  nav {
+    a,
+    .nav-item,
+    .dropdown {
+      border-left: none;
+      // border-right: 1px solid #ddd;
+      .dropdown-item {
+        a {
+          padding-left: 0;
+          transition: all 0.1s ease-in;
+          &:hover {
+            padding-right: unset;
+            padding-left: 0.1rem;
+          }
+        }
+        svg {
+          transform: rotate(180deg);
+          margin-right: 0.5rem;
+          margin-left: 0;
+        }
+      }
+      .dropdown-menu[data-bs-popper] {
+        left: 0;
+        right: unset;
+      }
+    }
+    .left {
+      border-right: none;
+    }
+    .phoneCall {
+      margin-right: 0;
+      margin-left: 0.2rem;
+    }
+  }
+  .navbar-nav > div .icon {
+    margin-left: unset;
+    margin-right: 8px;
+  }
+  .navbar-nav .dropdown-menu > a {
+    text-align: left;
+    svg {
+      transform: scaleX(-1);
+    }
+  }
+
+  .card.flex-horizontal,
+  .card.flex-horizontal .card-desc {
+    text-align: left;
+    .card-icon {
+      margin-left: unset;
+      margin-right: 1rem;
+    }
+  }
+  section {
+    .section-title {
+      text-align: left;
+    }
+  }
+  section.securityNetwork .container,
+  section.supporting .container,
+  section.customerServices .container,
+  section.cardIssuance .container,
+  section.hardware .container,
+  section.queue .container,
+  section.sunPanel .container,
+  section.printer .container,
+  section.about .container,
+  section.software .container {
+    background-color: rgba(255, 255, 255, 0.7);
+    text-align: left;
+    ul.listStyle li,
+    .section-title,
+    .title {
+      text-align: left;
+    }
+  }
+  section.contact {
+    .card-title {
+      text-align: left;
+    }
+    .contact-info {
+      text-align: left;
+      svg {
+        margin: 1px 8px 1px 0 !important;
+      }
+    }
+  }
+  .swiper-slide {
+    min-height: 101px;
+  }
+  .parsMan {
+    transform: rotateY(180deg);
+  }
+
+  .hero .hero-wrp .hero-link .hero-link-icon {
+    margin-right: 1rem;
+    margin-left: unset;
+  }
+  .footer ul.links li a::before {
+    margin-right: 0.4rem;
+    margin-left: unset;
+    position: relative;
+    top: -1px;
+  }
+  .footer ul li svg {
+    margin-right: 0.4rem;
+    margin-left: unset;
+  }
+
+  // thumbnail
+  .card.thumbnail-card .card-title {
+    text-align: left;
+    direction: ltr;
+  }
+}
