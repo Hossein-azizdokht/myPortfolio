@@ -7,7 +7,6 @@ const timelineSchema = new mongoose.Schema({
   fromfa: { type: String },
   to: { type: String },
   tofa: { type: String },
-  tofa: { type: String },
   stack: { type: String },
   company: { type: String },
   companyfa: { type: String },

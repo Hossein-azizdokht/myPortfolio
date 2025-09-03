@@ -22,7 +22,7 @@ export async function getServerSideProps(context) {
         ["common"],
         nextI18nextConfig
       )),
-      tileline: data,
+      timeline: data,
     },
   };
 }
