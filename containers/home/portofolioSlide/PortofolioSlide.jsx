@@ -62,7 +62,7 @@ const PortofolioSlide = (props) => {
             className="mySwiper pb-5 pt-5 directionHandler"
             style={{ marginTop: "-45px" }}
           >
-            {props.data?.map((item) => (
+            {props?.data?.map((item) => (
               <SwiperSlide key={item.id} onClick={() => showImage(item)}>
                 <PortofolioItem
                   // link={item.url}
