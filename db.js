@@ -7,7 +7,7 @@ const connection = async () => {
   try {
     // await mongoose.connect("mongodb://127.0.0.1:27017/portfolio");
     await mongoose.connect(
-      "mongodb+srv://admin:qMcmBmVt1qbfrMQk@cluster0.tywnjio.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0/portfolio"
+      "mongodb+srv://admin:qMcmBmVt1qbfrMQk@cluster0.tywnjio.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0/portfoilio"
     );
     console.log(chalk.green("Connected to MongoDB"));
   } catch (error) {
