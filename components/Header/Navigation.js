@@ -63,12 +63,14 @@ export default function Navigation() {
       // Get the current scroll position
       const scrollPosition = window.scrollY;
     };
+ if (typeof window !== "undefined") {
 
     window.addEventListener("scroll", handleScroll);
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
+    }
   }, []);
 
   return (
