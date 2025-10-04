@@ -7,7 +7,7 @@ import TestimonialSlide from "@/containers/home/testimonialSlide/TestimonialSlid
 import Timeline from "@/containers/home/timeline/timeline";
 import PortofolioSlide from "@/containers/home/portofolioSlide/PortofolioSlide";
 import OurCustomers from "@/containers/home/OurCustomers/OurCustomers";
-
+const apiUrl = process.env.NEXT_PUBLIC_API_URL;
 function Home({ testimationData, portfolioData, timelineData }) {
   return (
     <>
@@ -37,16 +37,16 @@ export default Home;
 
 export async function getServerSideProps(context) {
   // get portfolio data
-  const portfolioResult = await fetch("http://localhost:3000/api/gallery");
+  const portfolioResult = await fetch(`${apiUrl}/api/gallery`);
   const portfolioData = await portfolioResult.json();
 
   // get timeline data
-  const timelineResult = await fetch("http://localhost:3000/api/timeline");
+  const timelineResult = await fetch(`${apiUrl}/api/timeline`);
   const timelineData = await timelineResult.json();
 
   // get testimation data
   const testimationResult = await fetch(
-    "http://localhost:3000/api/testimation"
+    `${apiUrl}/api/testimation`
   );
   const testimationData = await testimationResult.json();
 
