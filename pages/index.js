@@ -7,7 +7,7 @@ import TestimonialSlide from "@/containers/home/testimonialSlide/TestimonialSlid
 import Timeline from "@/containers/home/timeline/timeline";
 import PortofolioSlide from "@/containers/home/portofolioSlide/PortofolioSlide";
 import OurCustomers from "@/containers/home/OurCustomers/OurCustomers";
-const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+const apiUrl = "my-portfolio-three-sooty-77.vercel.app";
 function Home({ testimationData, portfolioData, timelineData }) {
   return (
     <>
