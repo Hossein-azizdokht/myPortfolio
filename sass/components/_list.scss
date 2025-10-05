@@ -13,13 +13,14 @@
       transform: translateY(-50%);
     }
   }
-  .square:first-child {
+  .square:last-child {
     li {
       &:first-child {
         &::before {
           background-color: rgb(240, 147, 71);
           border-color: orange;
-          box-shadow: 0 0 0 5px #fff inset,0 0 0 10px rgba(240, 147, 71,0.1),0 0 0 5px rgba(240, 147, 71,0.1);
+          box-shadow: 0 0 0 5px #fff inset, 0 0 0 10px rgba(240, 147, 71, 0.1),
+            0 0 0 5px rgba(240, 147, 71, 0.1);
         }
       }
     }
