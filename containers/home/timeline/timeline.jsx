@@ -100,7 +100,7 @@ const Timeline = ({ data }) => {
               ))}
             </ul>
           </div>
-          <div className="col-md-5">
+          <div className="col-md-5 opacity-30 md:opacity-100">
             <Logo_network />
           </div>
         </div>

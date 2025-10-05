@@ -25,7 +25,7 @@ const PortofolioSlide = (props) => {
     setShowLightbox(false);
   }
   return (
-    <section className="min-h-[calc(60vh)]  items-center content-center flex">
+    <section className="min-h-[calc(60vh)]  items-center content-center flex mt-16 md:mt-4">
       <div className="container">
         <SectionTitle
           title={t("home.portfolio.sectionTitle")}

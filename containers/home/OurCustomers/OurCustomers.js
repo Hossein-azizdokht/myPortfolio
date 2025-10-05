@@ -22,7 +22,7 @@ function OurCustomers() {
         />
         <Swiper
           spaceBetween={15}
-          slidesPerView="auto"
+          slidesPerView={2}
           breakpoints={{
             640: {
               slidesPerView: 2,

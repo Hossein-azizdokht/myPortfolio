@@ -49,10 +49,10 @@ const MySkills = (props) => {
   const { t } = useTranslation();
 
   return (
-    <section className="min-h-[700px] items-center content-center flex">
+    <section className="min-h-[700px] items-center content-center flex mb-4 mt-12 md:mt-1">
       <div className="container">
         <div className="row">
-          <div className="col-md-6">
+          <div className="col-md-6 order-2 order-md-2">
             <div className="row">
               <div className="col-6 col-lg-4 col-md-6 col-sm-6">
                 <LoadAnimObj>
@@ -109,7 +109,7 @@ const MySkills = (props) => {
                   </div>
                 </LoadAnimObj>
               </div>
-              <div className="col-4 col-lg-4 col-md-6 col-sm-6">
+              <div className="col-6 col-lg-4 col-md-6 col-sm-6">
                 <LoadAnimObj>
                   <div className="p-3 bg-slate-50 mb-2 hoverAnim !shadow-none">
                     <Link href="" className="text-center">
@@ -283,7 +283,7 @@ const MySkills = (props) => {
               </div>
             </div>
           </div>
-          <div className="col-md-6 !pl-10">
+          <div className="col-md-6 !pl-4 md:!pl-10 order-1 order-md-1">
             <SectionTitle
               title={t("home.skills.sectionTitle")}
               subTitle={t("home.skills.sectionSubTitle")}
@@ -299,7 +299,7 @@ const MySkills = (props) => {
                   </p>
                 </div>
                 <div
-                  className="dodo_progress wow fadeInUp"
+                  className="dodo_progress wow fadeInUp !mb-10 md:!mt-0"
                   data-wow-duration=".7s"
                   data-wow-delay=".2s"
                 >
