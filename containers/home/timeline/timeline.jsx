@@ -1,31 +1,27 @@
-import BaseURL from "@/config/index";
 import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
 import { Container } from "react-bootstrap";
 import { useInView } from "react-intersection-observer";
-const GalleryPath = "/files/news_gallery/"; //مسیر تصاویر خبر
 
-import nextI18nextConfig from "next-i18next.config";
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import Logo_network from "public/images/logo_network";
-import { useTranslation } from "next-i18next";
-import { CgArrowLongLeftE, CgArrowRight } from "react-icons/cg";
 import SectionTitle from "@/components/sectionTitle";
-export async function getServerSideProps(context) {
-  const res = await fetch(`${BaseURL}/timeline`);
-  const data = await res.json();
+import { useTranslation } from "next-i18next";
+import Logo_network from "public/images/logo_network";
+import { CgArrowRight } from "react-icons/cg";
+// export async function getServerSideProps(context) {
+//   const res = await fetch(`${BaseURL}/timeline`);
+//   const data = await res.json();
 
-  return {
-    props: {
-      ...(await serverSideTranslations(
-        context.locale ?? "fa",
-        ["common"],
-        nextI18nextConfig
-      )),
-      timeline: data,
-    },
-  };
-}
+//   return {
+//     props: {
+//       ...(await serverSideTranslations(
+//         context.locale ?? "fa",
+//         ["common"],
+//         nextI18nextConfig
+//       )),
+//       timeline: data,
+//     },
+//   };
+// }
 
 const Timeline = ({ data }) => {
   const { t, i18n } = useTranslation();

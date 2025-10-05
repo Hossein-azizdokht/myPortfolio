@@ -7,6 +7,10 @@ import TestimonialSlide from "@/containers/home/testimonialSlide/TestimonialSlid
 import Timeline from "@/containers/home/timeline/timeline";
 import PortofolioSlide from "@/containers/home/portofolioSlide/PortofolioSlide";
 import OurCustomers from "@/containers/home/OurCustomers/OurCustomers";
+import connection from "db";
+import GalleryModel from "@/models/galleryModel";
+import TimelineModel from "@/models/timelineModel";
+import TestimationModel from "@/models/testimationModel";
 const apiUrl = process.env.NEXT_PUBLIC_API_URL;
 function Home({ testimationData, portfolioData, timelineData }) {
   return (
@@ -36,30 +40,24 @@ export default Home;
 // Server Side request ---------------------------------------------------------------
 
 export async function getServerSideProps(context) {
-  // get portfolio data
-  const portfolioResult = await fetch(`${apiUrl}/api/gallery`);
-  const portfolioData = await portfolioResult.json();
+  await connection();
 
-  // get timeline data
-  const timelineResult = await fetch(`${apiUrl}/api/timeline`);
-  const timelineData = await timelineResult.json();
-
-  // get testimation data
-  const testimationResult = await fetch(
-    `${apiUrl}/api/testimation`
-  );
-  const testimationData = await testimationResult.json();
+  const [portfolioData, timelineData, testimationData] = await Promise.all([
+    GalleryModel.find({}),
+    TimelineModel.find({}),
+    TestimationModel.find({}),
+  ]);
 
   return {
     props: {
       ...(await serverSideTranslations(
-        context.locale ?? ["en", "fa"],
+        context.locale ?? "en",
         ["common"],
         nextI18nextConfig
       )),
-      portfolioData,
-      testimationData,
-      timelineData,
+      portfolioData: JSON.parse(JSON.stringify(portfolioData)),
+      timelineData: JSON.parse(JSON.stringify(timelineData)),
+      testimationData: JSON.parse(JSON.stringify(testimationData)),
     },
   };
 }
