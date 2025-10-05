@@ -163,7 +163,7 @@ export default function Navigation() {
               {/* <LanguageSelect /> */}
               {showLanguageButton && (
                 <Link
-                  href={`/${router.pathname}`}
+                  href={`${router.pathname}`}
                   className="languageBtn"
                   locale={i18n.language === "fa" ? "en" : "fa"}
                 >
