@@ -16,8 +16,10 @@ function OurCustomers() {
   return (
     <section className="min-h-[50vh] customers">
       <div className="container p-5">
-  
-        <SectionTitle title={t("home.ourCustomers.sectionTitle")} subTitle={t("home.ourCustomers.sectionSubTitle")} />
+        <SectionTitle
+          title={t("home.ourCustomers.sectionTitle")}
+          subTitle={t("home.ourCustomers.sectionSubTitle")}
+        />
         <Swiper
           spaceBetween={15}
           slidesPerView="auto"
@@ -79,7 +81,6 @@ function OurCustomers() {
           <SwiperSlide>
             <img src={`/images/customers/10.png`} alt="customer logo" />
           </SwiperSlide>
-  
         </Swiper>
       </div>
     </section>

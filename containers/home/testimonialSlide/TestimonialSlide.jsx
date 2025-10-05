@@ -11,6 +11,7 @@ import SectionTitle from "@/components/sectionTitle";
 // import { TbBrandNextjs } from "react-icons/tb";
 
 const TestimonialSlide = (props) => {
+  if (!props.data.length) return null;
   const { t, i18n } = useTranslation();
   return (
     <section className="min-h-[calc(60vh)] items-center content-center flex">

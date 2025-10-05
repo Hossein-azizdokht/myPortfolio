@@ -12,6 +12,7 @@ import PortfolioLightbox from "./portfolioLightbox";
 import { useState } from "react";
 
 const PortofolioSlide = (props) => {
+  if (!props.data.length) return null;
   const { t, i18n } = useTranslation();
   const [showLightbox, setShowLightbox] = useState(false);
   const [lightboxData, setLightboxData] = useState({});
