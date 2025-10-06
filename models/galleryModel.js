@@ -5,8 +5,10 @@ import mongoose from "mongoose";
 const gallerySchema = new mongoose.Schema(
   {
     title: { type: String },
+    titlefa: { type: String },
     desc: { type: String },
     cover: { type: String },
+    category: { type: [String] },
     icons: { type: Array },
   },
   { collection: "galleries" } // explicitly define collection name

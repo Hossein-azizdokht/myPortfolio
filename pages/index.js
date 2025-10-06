@@ -11,7 +11,6 @@ import connection from "db";
 import GalleryModel from "@/models/galleryModel";
 import TimelineModel from "@/models/timelineModel";
 import TestimationModel from "@/models/testimationModel";
-const apiUrl = process.env.NEXT_PUBLIC_API_URL;
 function Home({ testimationData, portfolioData, timelineData }) {
   return (
     <>

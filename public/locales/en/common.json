@@ -9,6 +9,7 @@
         "menuTitle": "About us"
       },
       "contact": { "menuTitle": "Contact us" },
+      "gallery": "Gallery",
       "articles": { "menuTitle": "Articles" },
       "career": {
         "menuTitle": "Careers"
@@ -175,6 +176,12 @@
     }
   },
 
+  "gallery": {
+    "title": "Gallery",
+    "subtitle": "My Creative Works",
+    "all": "All",
+    "noItems": "No items found in this category"
+  },
   "offcanvas": {
     "title": "Menu"
   },
