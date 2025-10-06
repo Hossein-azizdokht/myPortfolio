@@ -167,7 +167,7 @@ const Hero = () => {
                     <li className="mb-[15px] py-0 inline-block">
                       <div className="list_inner flex items-center">
                         <h3 className="text-[35px] font-light text-orange-500 ltr">
-                          +<CountUp end={1500} enableScrollSpy={true} />
+                          +<CountUp end={500} enableScrollSpy={true} />
                         </h3>
                         <span className="font-poppins pl-[10px] inline-block leading-[1.4] relative top-[-3px] text-[xs]">
                           {t("home.hero.customers1")}
