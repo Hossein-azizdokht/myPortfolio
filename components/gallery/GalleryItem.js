@@ -34,9 +34,9 @@ const GalleryItem = ({ item, onClick }) => {
       </div>
 
       <div className="p-4 bg-white">
-        <h3 className="font-semibold text-gray-800 mb-2 line-clamp-2">
+        <h6 className="font-semibold text-gray-800 mb-2 line-clamp-2">
           {i18n.language === "fa" ? item.titlefa : item.title}
-        </h3>
+        </h6>
 
         {item.desc && (
           <p className="text-gray-600 text-sm line-clamp-3">{item.desc}</p>
@@ -44,8 +44,8 @@ const GalleryItem = ({ item, onClick }) => {
 
         {item.category && (
           <div className="mt-3">
-            <span className="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">
-              {item.category}
+            <span className="inline-block bg-blue-50 text-blue-800 text-xs px-2 py-0.5 rounded-full">
+              {item.category.map((cat) => cat).join(", ")}
             </span>
           </div>
         )}

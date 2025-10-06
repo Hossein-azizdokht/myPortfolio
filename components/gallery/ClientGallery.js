@@ -120,14 +120,14 @@ const ClientGallery = ({ galleryData = [] }) => {
 
   return (
     <div className="min-h-screen bg-gray-50 pb-20">
-      <div className="container mx-auto px-4 py-16">
+      <div className="container mx-auto px-4 !py-16">
         <SectionTitle
           title={t("gallery.title")}
           subTitle={t("gallery.subtitle")}
         />
 
         {/* Category Filter */}
-        <div className="flex flex-wrap justify-center gap-4 mb-12">
+        <div className="flex flex-wrap justify-center gap-2 mb-12">
           {categories.map((category) => {
             // Get display label for category
             const getCategoryLabel = (cat) => {
@@ -225,9 +225,9 @@ const ClientGallery = ({ galleryData = [] }) => {
               <button
                 key={category}
                 onClick={() => setSelectedCategory(category)}
-                className={`px-6 py-3 rounded-full font-medium transition-all duration-300 flex items-center gap-2 ${
+                className={`px-6 py-1 rounded-md font-medium transition-all duration-300 flex items-center gap-2 ${
                   selectedCategory === category
-                    ? "bg-blue-600 text-white shadow-lg"
+                    ? "bg-black text-white shadow-lg"
                     : "bg-white text-gray-700 hover:bg-gray-100 border border-gray-200"
                 }`}
               >
