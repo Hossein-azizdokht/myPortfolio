@@ -225,7 +225,7 @@ const ClientGallery = ({ galleryData = [] }) => {
               <button
                 key={category}
                 onClick={() => setSelectedCategory(category)}
-                className={`px-6 py-1 rounded-md font-medium transition-all duration-300 flex items-center gap-2 ${
+                className={`px-2 py-1 rounded-md font-medium transition-all duration-300 flex items-center gap-2 ${
                   selectedCategory === category
                     ? "bg-black text-white shadow-lg"
                     : "bg-white text-gray-700 hover:bg-gray-100 border border-gray-200"
