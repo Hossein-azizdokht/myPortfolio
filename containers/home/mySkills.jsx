@@ -386,7 +386,7 @@ const MySkills = (props) => {
                   <div className="progress_inner" data-value="20">
                     <div className="flex w-full justify-between mb-1">
                       <span className="label">Typescript Js</span>
-                      <span className="number">20%</span>
+                      <span className="number">50%</span>
                     </div>
                     <div className="progress">
                       <div
