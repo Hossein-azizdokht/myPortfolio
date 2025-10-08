@@ -305,7 +305,7 @@ const MySkills = (props) => {
                 >
                   <div className="progress_inner" data-value="95">
                     <div className="flex w-full justify-between mb-1">
-                      <span className="label">HTML &amp; CSS &amp; SASS</span>
+                      <span className="label">HTML &amp; CSS &amp; SASS &amp; Tailwindcss</span>
                       <span className="number">95%</span>
                     </div>
                     <div className="progress">
@@ -392,8 +392,8 @@ const MySkills = (props) => {
                       <div
                         className="progress-bar"
                         role="progressbar"
-                        style={{ width: "20%" }}
-                        aria-valuenow="20"
+                        style={{ width: "50%" }}
+                        aria-valuenow="50"
                         aria-valuemin="0"
                         aria-valuemax="100"
                       ></div>
