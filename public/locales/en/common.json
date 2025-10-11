@@ -9,6 +9,7 @@
         "menuTitle": "About us"
       },
       "contact": { "menuTitle": "Contact us" },
+      "gallery": "Gallery",
       "articles": { "menuTitle": "Articles" },
       "career": {
         "menuTitle": "Careers"
@@ -28,7 +29,7 @@
   },
   "home": {
     "hero": {
-      "myName": "Hi, I'm Hossein Azizdokht",
+      "myName": "Hi, I'm Hossein!",
       "myWork1": "Front-End Web Developer &",
       "myWork2": "Graphic Designer",
       "workItem1": "Web Development",
@@ -175,6 +176,12 @@
     }
   },
 
+  "gallery": {
+    "title": "Gallery",
+    "subtitle": "My Creative Works",
+    "all": "All",
+    "noItems": "No items found in this category"
+  },
   "offcanvas": {
     "title": "Menu"
   },

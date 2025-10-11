@@ -1,17 +1,14 @@
-// db.js
-
-import chalk from "chalk";
 import mongoose from "mongoose";
+import chalk from "chalk";
 
 const connection = async () => {
+  if (mongoose.connections[0].readyState) return; // use existing connection
+
   try {
-    // await mongoose.connect("mongodb://127.0.0.1:27017/portfolio");
-    await mongoose.connect(
-      "mongodb+srv://admin:vt8GxaKno119Bwkd@cluster0.tywnjio.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0/portfolio"
-    );
-    console.log(chalk.green("Connected to MongoDB"));
+    await mongoose.connect(process.env.MONGODB_URI);
+    console.log(chalk.green("Connected to MongoDB Atlas"));
   } catch (error) {
-    console.error("Error connecting to MongoDB:", error.message);
+    console.error(chalk.red("MongoDB connection error:", error.message));
   }
 };
 

@@ -12,7 +12,7 @@ const Hero = () => {
     visible: { opacity: 1, scale: 1, blur: 0, transition: { duration: 0.3 } },
     hidden: { opacity: 0, scale: 0.9, blur: 3 },
   };
-  function LoadAnimObj({ children }) {
+  function LoadAnimObj({ children, className }) {
     const controls = useAnimation();
     const [ref, inView] = useInView();
     useEffect(() => {
@@ -28,7 +28,7 @@ const Hero = () => {
         animate={controls}
         initial="hidden"
         variants={loadAnimObjVariants}
-        className="square"
+        className={`square ${className && className}`}
       >
         {children}
       </motion.div>
@@ -58,7 +58,7 @@ const Hero = () => {
           <div className="col-md-6">
             <div className="mt-5 pl-[0.8rem]">
               <LoadAnimObj>
-                <span className="text-2xl text-slate-400 font-light">
+                <span className="text-3xl text-slate-400 font-extralight">
                   {t("home.hero.myName")}
                 </span>
               </LoadAnimObj>
@@ -150,13 +150,13 @@ const Hero = () => {
               </div>
               <div className="short_info w-full h-auto clear-both">
                 <ul className="pl-0">
-                  <LoadAnimObj>
-                    <li className="mr-[50px] mb-[15px] py-0 inline-block">
+                  <LoadAnimObj className="md:flex-col flex items-start">
+                    <li className="mr-[10px] mb-[15px] py-0 inline-block border-r pr-4 border-dashed border-r-slate-400 md:!border-none">
                       <div className="list_inner flex items-center">
-                        <h3 className="text-[45px] font-extralight text-orange-500 ltr">
-                          +<CountUp end={8} enableScrollSpy={true} />
+                        <h3 className="text-[35px] font-light text-orange-500 ltr">
+                          +<CountUp end={10} enableScrollSpy={true} />
                         </h3>
-                        <span className="font-poppins pl-[15px] inline-block leading-[1.4] relative top-[-3px] text-[14px]">
+                        <span className="font-poppins pl-[10px] inline-block leading-[1.4] relative top-[-3px] text-xs">
                           {t("home.hero.experience1")}
                           <br />
                           {t("home.hero.experience2")}
@@ -166,10 +166,10 @@ const Hero = () => {
 
                     <li className="mb-[15px] py-0 inline-block">
                       <div className="list_inner flex items-center">
-                        <h3 className="text-[45px] font-extralight text-orange-500 ltr">
-                          +<CountUp end={350} enableScrollSpy={true} />
+                        <h3 className="text-[35px] font-light text-orange-500 ltr">
+                          +<CountUp end={500} enableScrollSpy={true} />
                         </h3>
-                        <span className="font-poppins pl-[15px] inline-block leading-[1.4] relative top-[-3px] text-[14px]">
+                        <span className="font-poppins pl-[10px] inline-block leading-[1.4] relative top-[-3px] text-[xs]">
                           {t("home.hero.customers1")}
                           <br />
                           {t("home.hero.customers2")}
@@ -195,7 +195,7 @@ const Hero = () => {
         </div>
         <LoadAnimObj>
           <Link to="skills" smooth={true} id="skills">
-            <div className="scroll m-auto top-16 relative"></div>
+            <div className="scroll m-auto md:top-16 relative"></div>
           </Link>
         </LoadAnimObj>
       </div>

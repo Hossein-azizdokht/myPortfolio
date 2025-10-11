@@ -12,6 +12,7 @@ import PortfolioLightbox from "./portfolioLightbox";
 import { useState } from "react";
 
 const PortofolioSlide = (props) => {
+  if (!props.data.length) return null;
   const { t, i18n } = useTranslation();
   const [showLightbox, setShowLightbox] = useState(false);
   const [lightboxData, setLightboxData] = useState({});
@@ -24,7 +25,7 @@ const PortofolioSlide = (props) => {
     setShowLightbox(false);
   }
   return (
-    <section className="min-h-[calc(60vh)]  items-center content-center flex">
+    <section className="min-h-[calc(60vh)]  items-center content-center flex mt-16 md:mt-4">
       <div className="container">
         <SectionTitle
           title={t("home.portfolio.sectionTitle")}

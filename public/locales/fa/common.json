@@ -11,6 +11,7 @@
       "contact": {
         "menuTitle": "تماس با ما"
       },
+      "gallery": "گالری",
       "articles": { "menuTitle": "مقالات" },
       "career": {
         "menuTitle": "فرصت‌های شغلی"
@@ -177,6 +178,12 @@
     }
   },
 
+  "gallery": {
+    "title": "گالری",
+    "subtitle": "آثار خلاقانه من",
+    "all": "همه",
+    "noItems": "موردی در این دسته‌بندی یافت نشد"
+  },
   "offcanvas": {
     "title": "منوی دسترسی"
   },

@@ -6,7 +6,11 @@ import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import { useTranslation } from "next-i18next";
 import { FiPhoneCall } from "react-icons/fi";
-import { HiOutlineHome, HiOutlinePhoneIncoming } from "react-icons/hi";
+import {
+  HiOutlineHome,
+  HiOutlinePhoneIncoming,
+  HiOutlinePhotograph,
+} from "react-icons/hi";
 import { Link as SLink } from "react-scroll";
 
 import { SquareLoader } from "react-spinners";
@@ -63,12 +67,13 @@ export default function Navigation() {
       // Get the current scroll position
       const scrollPosition = window.scrollY;
     };
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", handleScroll);
 
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }
   }, []);
 
   return (
@@ -146,6 +151,11 @@ export default function Navigation() {
                 </div>
 
                 <div>
+                  <HiOutlinePhotograph className="icon" />
+                  <Link href="/gallery">{t("header.navigation.gallery")}</Link>
+                </div>
+
+                <div>
                   <HiOutlinePhoneIncoming className="icon" />
                   <SLink smooth={true} to="footer">
                     {t("header.navigation.contact.menuTitle")}
@@ -161,7 +171,7 @@ export default function Navigation() {
               {/* <LanguageSelect /> */}
               {showLanguageButton && (
                 <Link
-                  href={`/${router.pathname}`}
+                  href={`${router.pathname}`}
                   className="languageBtn"
                   locale={i18n.language === "fa" ? "en" : "fa"}
                 >

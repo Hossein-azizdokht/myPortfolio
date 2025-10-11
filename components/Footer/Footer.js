@@ -26,7 +26,7 @@ const Footer = () => {
         <LogoRadar />
       </div>
       <div className="mx-auto max-w-screen-xl px-4 pb-8 pt-16 sm:px-6 lg:px-8 lg:pt-24 relative z-50">
-        <p className="absolute right-0 left-0 text-center text-5xl font-thin bottom-25">
+        <p className="absolute right-2 left-2 text-center text-5xl font-thin bottom-32">
           {t("footer.slogan")}
         </p>
         <div className="mt-16 border-t border-gray-100 pt-8 sm:flex sm:items-center sm:justify-between lg:mt-24">

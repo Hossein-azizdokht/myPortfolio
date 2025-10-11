@@ -16,11 +16,13 @@ function OurCustomers() {
   return (
     <section className="min-h-[50vh] customers">
       <div className="container p-5">
-  
-        <SectionTitle title={t("home.ourCustomers.sectionTitle")} subTitle={t("home.ourCustomers.sectionSubTitle")} />
+        <SectionTitle
+          title={t("home.ourCustomers.sectionTitle")}
+          subTitle={t("home.ourCustomers.sectionSubTitle")}
+        />
         <Swiper
           spaceBetween={15}
-          slidesPerView="auto"
+          slidesPerView={2}
           breakpoints={{
             640: {
               slidesPerView: 2,
@@ -48,38 +50,43 @@ function OurCustomers() {
           className="mySwiper mt-10"
         >
           <SwiperSlide>
-            <img src={`/images/customers/1.png`} alt="customer logo" />
+            <img src={`/images/customers/1.png`} alt="Hesabrayan logo" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={`/images/customers/2.png`} alt="customer logo" />
+            <img src={`/images/customers/2.png`} alt="Bon Rail logo" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={`/images/customers/3.png`} alt="customer logo" />
+            <img src={`/images/customers/3.png`} alt="IR Gov logo" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={`/images/customers/4.png`} alt="customer logo" />
+            <img src={`/images/customers/4.png`} alt="Payam Noor logo" />
           </SwiperSlide>
 
           <SwiperSlide>
-            <img src={`/images/customers/5.png`} alt="customer logo" />
+            <img
+              src={`/images/customers/5.png`}
+              alt="Parstechnology Sadad logo"
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={`/images/customers/6.png`} alt="customer logo" />
+            <img src={`/images/customers/6.png`} alt="Sorosh logo" />
           </SwiperSlide>
 
           <SwiperSlide>
-            <img src={`/images/customers/7.png`} alt="customer logo" />
+            <img src={`/images/customers/7.png`} alt="Oghaf logo" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={`/images/customers/8.png`} alt="customer logo" />
+            <img src={`/images/customers/8.png`} alt="Navaco logo" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={`/images/customers/9.png`} alt="customer logo" />
+            <img src={`/images/customers/9.png`} alt="RAJA logo" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={`/images/customers/10.png`} alt="customer logo" />
+            <img src={`/images/customers/10.png`} alt="BMI logo" />
           </SwiperSlide>
-  
+          <SwiperSlide>
+            <img src={`/images/customers/11.png`} alt="Sadad logo" />
+          </SwiperSlide>
         </Swiper>
       </div>
     </section>
