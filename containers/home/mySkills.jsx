@@ -306,7 +306,7 @@ const MySkills = (props) => {
                   <div className="progress_inner" data-value="95">
                     <div className="flex w-full justify-between mb-1">
                       <span className="label">HTML &amp; CSS &amp; SASS</span>
-                      <span className="number">95%</span>
+                      <span className="number">90%</span>
                     </div>
                     <div className="progress">
                       <div
@@ -354,7 +354,7 @@ const MySkills = (props) => {
                   <div className="progress_inner" data-value="65">
                     <div className="flex w-full justify-between mb-1">
                       <span className="label">Git</span>
-                      <span className="number">65%</span>
+                      <span className="number">70%</span>
                     </div>
                     <div className="progress">
                       <div
@@ -386,7 +386,7 @@ const MySkills = (props) => {
                   <div className="progress_inner" data-value="20">
                     <div className="flex w-full justify-between mb-1">
                       <span className="label">Typescript Js</span>
-                      <span className="number">20%</span>
+                      <span className="number">50%</span>
                     </div>
                     <div className="progress">
                       <div
