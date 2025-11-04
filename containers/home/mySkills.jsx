@@ -392,8 +392,8 @@ const MySkills = (props) => {
                       <div
                         className="progress-bar"
                         role="progressbar"
-                        style={{ width: "20%" }}
-                        aria-valuenow="20"
+                        style={{ width: "50%" }}
+                        aria-valuenow="50"
                         aria-valuemin="0"
                         aria-valuemax="100"
                       ></div>
