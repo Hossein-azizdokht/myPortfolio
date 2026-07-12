@@ -13,7 +13,7 @@
       transform: translateY(-50%);
     }
   }
-  .square:last-child {
+  .square:first-child {
     li {
       &:first-child {
         &::before {
