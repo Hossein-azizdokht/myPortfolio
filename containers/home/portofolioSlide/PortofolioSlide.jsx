@@ -60,7 +60,7 @@ const PortofolioSlide = (props) => {
             }}
             loop={true}
             modules={[Autoplay, Pagination, Navigation]}
-            className="mySwiper pb-5 pt-5 directionHandler"
+            className="mySwiper portfolioSwiper pb-5 pt-5 directionHandler"
             style={{ marginTop: "-45px" }}
           >
             {props?.data?.map((item) => (
