@@ -99,7 +99,7 @@ const Hero = () => {
 
         <div className="container">
           <div className="row">
-            <div className="col-md-6">
+            <div className="col-md-6 order-2 md:order-1">
               <div className="mt-5 pl-[0.8rem]">
                 <LoadAnimObj>
                   <span className="text-3xl text-slate-400 font-extralight">
@@ -210,7 +210,7 @@ const Hero = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md-6 flex items-center">
+            <div className="col-md-6 order-1 md:order-2 flex items-center">
               <LoadAnimObj>
                 <video
                   ref={videoRef}
