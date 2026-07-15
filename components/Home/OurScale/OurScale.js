@@ -39,9 +39,7 @@ function OurScale() {
 
     <section className="ourScale">
       <div className="container">
-        {/* <h4 className="section-title on-light text-center has-bullet mb-5">
-          پارس تکنولوژی سداد در اعداد و ارقام
-        </h4> */}
+
         <div className="row">
           {/* <div className="col-md-1"></div> */}
           <div className="col-lg-2 col-md-2 col-sm-6 col-6 rightPart has-dots">

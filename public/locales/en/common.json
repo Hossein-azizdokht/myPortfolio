@@ -6,9 +6,9 @@
         "BoardOfDirectors": "Board of directors",
         "CEO": "CEO",
         "Certificates": "Certificates",
-        "menuTitle": "About us"
+        "menuTitle": "About me"
       },
-      "contact": { "menuTitle": "Contact us" },
+      "contact": { "menuTitle": "Contact" },
       "gallery": "Gallery",
       "articles": { "menuTitle": "Articles" },
       "career": {
@@ -142,14 +142,44 @@
     }
   },
   "contact": {
-    "cardTitle": "",
-    "CustomerServices": "Customer Services",
-    "CustomerServices_label": "Providing 24/7 services to Bank Melli Iran customers",
-    "EconomicCode": "Economic code : 411449471179",
-    "NationalID": "National ID : 14004105517",
-    "pageTitle": "Contact us",
-    "RegistrationNumber": "Registration number: 455185",
-    "phoneNumbers": "+982183376  -  +982183386"
+    "pageTitle": "Contact me",
+    "subtitle": "Let's work together",
+    "description": "Get in touch for a new project, design consultation, or front-end development collaboration.",
+    "items": {
+      "phone": {
+        "label": "Phone",
+        "value": "09375872490"
+      },
+      "email": {
+        "label": "Email",
+        "value": "h.azizdokht@gmail.com"
+      },
+      "linkedin": {
+        "label": "LinkedIn",
+        "value": "Hossein Azizdokht"
+      },
+      "instagram": {
+        "label": "Instagram",
+        "value": "hogon.graphic"
+      },
+      "location": {
+        "label": "Location",
+        "value": "Tehran, Iran"
+      }
+    }
+  },
+  "aboutMe": {
+    "pageTitle": "About me",
+    "subtitle": "Designer & Developer",
+    "name": "Hossein Azizdokht",
+    "role": "Front-End Developer & Graphic Designer",
+    "bio1": "I'm Hossein Azizdokht — a graphic designer and front-end developer with over a decade of experience crafting visual identities, user interfaces, and modern websites. I stay with projects from concept to delivery so the final result looks great and works well.",
+    "bio2": "I focus on web design, UI/UX, and visual design, aiming for a balance of beauty, simplicity, and performance. Good design should be both eye-catching and practical.",
+    "point1": "Modern, responsive UI design and development",
+    "point2": "Brand identity, graphic design, and user experience",
+    "point3": "Close collaboration to deliver precise results",
+    "ctaGallery": "View portfolio",
+    "ctaContact": "Contact me"
   },
   "footer": {
     "slogan": "Design is thinking made visual.",

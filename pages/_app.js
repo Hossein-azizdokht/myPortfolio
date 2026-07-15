@@ -3,9 +3,13 @@ import "../styles/globals.css";
 import "bootstrap/dist/css/bootstrap.css";
 import "../sass/pars.scss";
 import Layout from "@/components/Layout";
-import AnimatedCursor from "react-animated-cursor";
+import dynamic from "next/dynamic";
 import { appWithTranslation } from "next-i18next";
 // import { appWithTranslation } from "next-i18next";
+
+const AnimatedCursor = dynamic(() => import("react-animated-cursor"), {
+  ssr: false,
+});
 
 function App({ Component, pageProps }) {
   return (

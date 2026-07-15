@@ -5,9 +5,11 @@ import Head from "next/head";
 export default function Layout({ title, keywords, description, children }) {
   return (
     <>
-      <Head>{title}</Head>
-      <meta name="descriptions" content={description} />
-      <meta name="keywords" content={keywords} />
+      <Head>
+        <title>{title}</title>
+        <meta name="description" content={description} />
+        <meta name="keywords" content={keywords} />
+      </Head>
       <Header />
       {children}
 
@@ -17,8 +19,8 @@ export default function Layout({ title, keywords, description, children }) {
 }
 
 Layout.defaultProps = {
-  title: "پارس تکنلوژی سداد",
-  description: "پارس تکنلوژی سداد",
-  keywords: "بانک ملی، سداد، فناوری اطلاعات، پشتیبانی بانک",
+  title: "",
+  description: "حسین عزیزدخت",
+  keywords: "طراح گرافیک، فرانت، برناه نویس فرانت، frontend developer, graphic designer,",
   children: "",
 };

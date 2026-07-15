@@ -10,12 +10,10 @@ import {
   HiOutlineHome,
   HiOutlinePhoneIncoming,
   HiOutlinePhotograph,
+  HiOutlineUser,
 } from "react-icons/hi";
-import { Link as SLink } from "react-scroll";
 
-import { SquareLoader } from "react-spinners";
 import Link from "next/link";
-import Loading from "../loading";
 
 export default function Navigation() {
   const { t, i18n } = useTranslation();
@@ -156,17 +154,18 @@ export default function Navigation() {
                 </div>
 
                 <div>
-                  <HiOutlinePhoneIncoming className="icon" />
-                  <SLink smooth={true} to="footer">
-                    {t("header.navigation.contact.menuTitle")}
-                  </SLink>
-                </div>
-                {/* <div>
-                  <HiOutlinePhoneIncoming className="icon" />
-                  <Link href="/articles">
-                    {t("header.navigation.articles.menuTitle")}
+                  <HiOutlineUser className="icon" />
+                  <Link href="/about">
+                    {t("header.navigation.aboutUs.menuTitle")}
                   </Link>
-                </div> */}
+                </div>
+
+                <div>
+                  <HiOutlinePhoneIncoming className="icon" />
+                  <Link href="/contact">
+                    {t("header.navigation.contact.menuTitle")}
+                  </Link>
+                </div>
               </Nav>
               {/* <LanguageSelect /> */}
               {showLanguageButton && (
@@ -190,7 +189,7 @@ export default function Navigation() {
               )}
             </Offcanvas.Body>
           </Navbar.Offcanvas>
-          <a activeclassname="active" className="left " href="tel:02188446699">
+          <a className="left " href="tel:+989375872490">
             <span className="numberTxt">
               {t("header.navigation.phoneNumber")}
             </span>

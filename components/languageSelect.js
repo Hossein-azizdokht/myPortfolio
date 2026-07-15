@@ -39,7 +39,7 @@ const LanguageSelect = () => {
     <>
       <Head>
         <meta charSet="utf-8" />
-        <title>{isRTL ? 'پارس تکنولوژی سداد' : 'Pars Technology Sadad'}</title>
+        <title>{isRTL ? 'حسین عزیزدخت' : 'Hossein Azizdokht'}</title>
         <body className={isRTL ? 'rtl' : 'ltr'} />
       </Head>
 

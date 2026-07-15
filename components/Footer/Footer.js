@@ -77,7 +77,7 @@ const Footer = () => {
 
             <li>
               <a
-                href="https://www.instagram.com/hossein.azizdokht"
+                href="https://www.instagram.com/hogon.graphic"
                 rel="noreferrer"
                 target="_blank"
                 className="text-gray-700 transition hover:opacity-75"

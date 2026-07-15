@@ -30,7 +30,7 @@ const Timeline = ({ data }) => {
     visible: { opacity: 1, scale: 1, transition: { duration: 0.3 } },
     hidden: { opacity: 0, scale: 0 },
   };
-  function LoadAnimObj({ children }) {
+  function LoadAnimObj({ children, className }) {
     const controls = useAnimation();
     const [ref, inView] = useInView();
     useEffect(() => {
@@ -41,15 +41,15 @@ const Timeline = ({ data }) => {
       }, 300);
     }, [controls, inView]);
     return (
-      <motion.div
+      <motion.li
         ref={ref}
         animate={controls}
         initial="hidden"
         variants={loadAnimObjVariants}
-        className="square"
+        className={`square ${className || ""}`}
       >
         {children}
-      </motion.div>
+      </motion.li>
     );
   }
 
@@ -65,37 +65,32 @@ const Timeline = ({ data }) => {
 
             <ul className="w-full !mt-4 ltr p-0 connectedList">
               {data?.map((n, index) => (
-                <LoadAnimObj key={n.index}>
-                  <li
-                    key={n.index}
-                    className={`w-full flex flex-col flex-wrap relative min-w-fit pt-[20px] pb-[20px] wow fadeInUp ${
-                      i18n.language === "fa"
-                        ? "rtl pr-8 border-r"
-                        : "ltr pl-8 border-l"
-                    }`}
-                    transition={{ delay: index * 0.4 }}
-                  >
-                    <div className="list_inner float-left text-[16px]">
-                      <span>{i18n.language === "fa" ? n.fromfa : n.from}</span>
-                      <span className="mx-2 text-slate-300">
-                        <CgArrowRight
-                          className={`inline-block text-2xl ${
-                            i18n.language === "en" ? "" : "rotate-180"
-                          }`}
-                        />
-                      </span>
-                      <span>{i18n.language === "fa" ? n.tofa : n.to}</span>
-                    </div>
-                    <div className="list_inner float-left text-[16px]">
-                      <span className="text-black font-medium">{n.stack}</span>
-                      <span> {i18n.language === "fa" ? " در " : " at "}</span>
-                      <span className="">
-                        {i18n.language === "fa" ? n.companyfa : n.company}
-                      </span>
-                    </div>
-
-                    {/* <div>n.</div> */}
-                  </li>
+                <LoadAnimObj
+                  key={n._id || n.index || index}
+                  className={`w-full flex flex-col flex-wrap relative min-w-fit pt-[20px] pb-[20px] wow fadeInUp ${
+                    i18n.language === "fa"
+                      ? "rtl pr-8 border-r"
+                      : "ltr pl-8 border-l"
+                  }`}
+                >
+                  <div className="list_inner float-left text-[16px]">
+                    <span>{i18n.language === "fa" ? n.fromfa : n.from}</span>
+                    <span className="mx-2 text-slate-300">
+                      <CgArrowRight
+                        className={`inline-block text-2xl ${
+                          i18n.language === "en" ? "" : "rotate-180"
+                        }`}
+                      />
+                    </span>
+                    <span>{i18n.language === "fa" ? n.tofa : n.to}</span>
+                  </div>
+                  <div className="list_inner float-left text-[16px]">
+                    <span className="text-black font-medium">{n.stack}</span>
+                    <span> {i18n.language === "fa" ? " در " : " at "}</span>
+                    <span className="">
+                      {i18n.language === "fa" ? n.companyfa : n.company}
+                    </span>
+                  </div>
                 </LoadAnimObj>
               ))}
             </ul>
@@ -108,7 +103,6 @@ const Timeline = ({ data }) => {
     </section>
   );
 };
-
 export default Timeline;
 
 Timeline.defaultProps = {

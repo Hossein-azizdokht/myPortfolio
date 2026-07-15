@@ -15,11 +15,11 @@ function LogoRadar(props) {
         <div class="circle1"></div>
         <div class="circle1"></div>
       </div> */}
-      <div class="wave scale-50">
-        <div class="wave__container">
-          <div class="wave__circle"></div>
-          <div class="wave__circle"></div>
-          <div class="wave__circle"></div>
+      <div className="wave scale-50">
+        <div className="wave__container">
+          <div className="wave__circle"></div>
+          <div className="wave__circle"></div>
+          <div className="wave__circle"></div>
         </div>
       </div>
       <figure className="ball">

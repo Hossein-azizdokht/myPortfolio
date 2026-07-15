@@ -3,14 +3,26 @@ import Hero from "@/containers/home/hero";
 import MySkills from "@/containers/home/mySkills";
 import nextI18nextConfig from "../next-i18next.config";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import TestimonialSlide from "@/containers/home/testimonialSlide/TestimonialSlide";
 import Timeline from "@/containers/home/timeline/timeline";
-import PortofolioSlide from "@/containers/home/portofolioSlide/PortofolioSlide";
-import OurCustomers from "@/containers/home/OurCustomers/OurCustomers";
+import dynamic from "next/dynamic";
 import connection from "db";
 import GalleryModel from "@/models/galleryModel";
 import TimelineModel from "@/models/timelineModel";
 import TestimationModel from "@/models/testimationModel";
+
+const PortofolioSlide = dynamic(
+  () => import("@/containers/home/portofolioSlide/PortofolioSlide"),
+  { ssr: false }
+);
+const TestimonialSlide = dynamic(
+  () => import("@/containers/home/testimonialSlide/TestimonialSlide"),
+  { ssr: false }
+);
+const OurCustomers = dynamic(
+  () => import("@/containers/home/OurCustomers/OurCustomers"),
+  { ssr: false }
+);
+
 function Home({ testimationData, portfolioData, timelineData }) {
   return (
     <>
